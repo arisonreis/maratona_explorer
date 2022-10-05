@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Serif:opsz,wght@8..144,100&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-global: #2d2c2a;
+  --cor-span: #995000;
+  --font-family: "Roboto", serif;
+  --font-description: "Roboto", sans-serif;
+  --background-legend: #fed7aa;
+  --color-p-article: #000000cb;
+}
+
+html,
+body {
+  color: var(--cor-global);
+  height: 100vh;
+  background: #ffedd5;
+  font-family: var(--font-family);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+header #box-text {
+  padding: 10px;
+}
+
+header #box-text h1 {
+  font-weight: 800;
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  font-size: 2.4rem;
+}
+header #box-text h1 span {
+  color: var(--cor-span);
+}
+
+header #box-text p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 30px;
+  font-family: var(--font-family);
+}
+main{
+  padding-bottom: 60px;
+}
+
+main .content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+main .content-center .legend {
+  background-color: var(--background-legend);
+  max-width: 400px;
+  min-width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+}
+main .content-center .legend .h2-legend {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+main .content-center ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  width: 400px;
+}
+
+main .content-center ul .list {
+  display: flex;
+  justify-content: center;
+}
+main .content-center ul .list .details {
+  display: block;
+}
+.details h3,
+strong {
+  font-family: var(--font-family);
+  color: var(--cor-global);
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+main .content-center ul .list .details .lorem {
+  color:var(--color-p-article);
+  font-family: var(--font-description);
+}
+
+main .content-center ul .list2{
+  display: flex;
+  justify-content: center;
+}
+
+
+@media(max-width: 425px){
+  main .content-center ul{
+    width: 100%;
+    padding: 0 8px;
+  }
+}
